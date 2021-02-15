@@ -1,0 +1,23 @@
+<section class="cardsOuter">
+  <div class="container">
+    <div class="miniTitle anim-items">
+      <h3>Səbətlər</h3>
+      <img src="./assets/img/uzor.png" alt="" />
+    </div>
+    <ngx-slick-carousel class="carousel cards" 
+      #slickModal="slick-carousel" 
+      [config]="slideConfig" >
+      <div ngxSlickItem *ngFor="let basket of baskets; let idx = index" class="slide card">
+        <div class="cardImg">
+          <img [src]="basket.img" alt="" />
+          <a [routerLink]="['/basket', idx]">Səbətə keç</a>
+        </div>
+        <div class="cardTitle">
+          <h4> {{basket.title}} </h4>
+          <p> {{basket.text}} </p>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+    
+  </div>
+</section>

@@ -1,0 +1,403 @@
+{
+  "slider": [
+    {
+      "image": "slider1.jpg",
+      "text": {
+        "h1": "Ət və Ət məhsulları - 20% endirim!",
+        "p": "Birinci slaydin metni burada yer alacaq. "
+      },
+      "url": "http://itstep.az"
+    },
+    {
+      "image": "slider2.jpg",
+      "text": {
+        "h1": "Meyvə, tərəvəzlər 25% endirim ilə!",
+        "p": "Ikinci slaydin metni burada yer alacaq. "
+      },
+      "url": "http://facebok.com"
+    },
+    {
+      "image": "slider3.jpg",
+      "text": {
+        "h1": "Sevdiyiniz şokoladlar - 30% endirim!",
+        "p": "Ucuncu slaydin metni burada yer alacaq. "
+      },
+      "url": "https://youtube.com"
+    },
+    {
+      "image": "slider4.jpg",
+      "text": {
+        "h1": "Qəhvələr - 15% endirim ilə!",
+        "p": "Dorduncu slaydin metni burada yer alacaq. "
+      },
+      "url": "http://president.az"
+    },
+    {
+      "image": "slider5.jpg",
+      "text": {
+        "h1": "Dostlarınız üçün 25% endirim!",
+        "p": "Besinci slaydin metni burada yer alacaq. "
+      },
+      "url": "https://getbootstrap.com/"
+    }
+  ],
+  "cat": [
+    "UN MƏMULATLARI",
+    "MEYVƏ və TƏRƏVƏZ",
+    "SÜD MƏHSULLARI və YUMURTA",
+    "ƏT MƏHSULLARI",
+    "İÇKİLƏR",
+    "ÇAY və QƏHVƏ",
+    "DONDURULMUŞ məhsullar",
+    "EVƏ qulluq",
+    "ŞƏXSİ QİQİYENA",
+    "KONSERV MƏHSULLARI",
+    "ÇƏRƏZ, ŞOKOLAD və QƏNNADI",
+    "HEYVANLAR üçün",
+    "KÖRPƏM",
+    "DƏFTƏRXANA MƏHSULLARI",
+    "XÜSUSİ QİDA",
+    "SİQARETLƏR"
+  ],
+  "subcat": [
+    {
+      "id": "00",
+      "list": [
+        "Çörək məmulatları",
+        "Bişmiş məhsullar",
+        "Makaron məmulatları",
+        "Düyü",
+        "Dənli bitliklər",
+        "Hazır suplar, sıyıqlar və səhər yeməkləri"
+      ]
+    },
+    {
+      "id": "01",
+      "list": [
+        "Meyvələr",
+        "Tərəvəzlər",
+        "Qiləmeyvə",
+        "Göy-göyərti",
+        "Qur meyvə"
+      ]
+    },
+    {
+      "id": "02",
+      "list": [
+        "Süd",
+        "Yoqurt, kəsmik, smetan və qaymaq",
+        "Yağ",
+        "Yumurta",
+        "Pendir",
+        "Qatıq, Ayran və Dovğa"
+      ]
+    },
+    {
+      "id": "03",
+      "list": [
+        "QUŞ əti",
+        "MAL əti",
+        "QOYUN əti",
+        "Kolbas və Sosislər",
+        "Balıq və dəniz məhsulları"
+      ]
+    },
+    {
+      "id": "04",
+      "list": [
+        "Soyuq içkilər",
+        "Şirələr",
+        "İdman və energetik içkilər",
+        "Mineral və qazlı sular",
+        "Qazsız sular",
+        "Alkoqollu içkilər"
+      ]
+    },
+    {
+      "id": "05",
+      "list": [
+        "Yarpaq çay",
+        "Paket çay",
+        "Həllolunan qəhvə",
+        "Üyüdülmüş qəhvə",
+        "Qəhvə Tabletləri",
+        "KAKAO, krem-kofe"
+      ]
+    },
+    {
+      "id": "06",
+      "list": [
+        "Meyvə və təvəzlər",
+        "ƏT məhsulları",
+        "Balıq və dəniz  məhsulları",
+        "YARIMfabrikatlar",
+        "Giləmeyvə",
+        "Dondurma"
+      ]
+    },
+    {
+      "id": "07",
+      "list": [
+        "Təmizləyici və yuyucu vasitələr",
+        "Tekstil",
+        "Mətbəxim",
+        "Batareya və elektrik məhsullar",
+        "Həşərat vasitələri əlehinə",
+        "Aksessuarlar"
+      ]
+    },
+    {
+      "id": "08",
+      "list": [
+        "Ağız boşluğu",
+        "Saç və Dəriyə qulluq",
+        "Qadın qiqiyenası",
+        "Kişi qiqiyenası"
+      ]
+    },
+    {
+      "id": "09",
+      "list": [
+        "Turşular",
+        "Pasta və souslar",
+        "Ət və Dəniz məhsulları",
+        "Mürəbbə və CEMlər",
+        "TƏRƏVƏZLƏR"
+      ]
+    },
+    {
+      "id": "10",
+      "list": ["Şokolad", "Peçenye", "Çipslər", "Konfetlər", "Çərəz", "Digər"]
+    },
+    {
+      "id": "11",
+      "list": [
+        "Pişiklər və itlər",
+        "Quşlar",
+        "Gəmiricilər",
+        "Balıqlar",
+        "Qiqiena"
+      ]
+    },
+    {
+      "id": "12",
+      "list": ["Qida", "Qayğı", "Oyuncaqlar"]
+    },
+    {
+      "id": "13",
+      "list": ["Məktəb və  OFİS ləvazimatları", "Əyləncə"]
+    },
+    {
+      "id": "14",
+      "list": ["Dietik və Diabetik", "İdman qidası", "VEGEtologiya"]
+    },
+    {
+      "id": "15",
+      "list": ["Siqaret", "Elektron siqaretlər", "Aksesuarlar"]
+    }
+  ],
+  "baskets": [
+    {
+      "img": "./assets/img/card0.jpg",
+      "title": "7/30",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card1.jpg",
+      "title": "Qonağımız var",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card2.jpg",
+      "title": "Qayğı səbəti",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card3.jpg",
+      "title": "Bayram səbəti",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card4.jpg",
+      "title": "Dünya mətbəxi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card5.jpg",
+      "title": "Səfər Səbəti",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card6.jpg",
+      "title": "Uşaqlarımızla bişirdiklərimiz",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card7.jpg",
+      "title": "Yaşıl səbət",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card8.jpg",
+      "title": "Apteçkam",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    },
+    {
+      "img": "./assets/img/card9.jpg",
+      "title": "Ev Heyvanları",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
+    }
+  ],
+  "products": [
+    {
+      "id": "000",
+      "key": "0001",
+      "category": "Çörək məmulatları",
+      "img": "./assets/img/product0.jpg",
+      "title": "Zavod çörəyi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.4"
+    },
+    {
+      "id": "000",
+      "key": "0002",
+      "category": "Çörək məmulatları",
+      "img": "./assets/img/product1.jpg",
+      "title": "'Çörəkçi' Zavod Çörəyi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.5"
+    },
+    {
+      "id": "000",
+      "key": "0003",
+      "category": "Çörək məmulatları",
+      "img": "./assets/img/product2.jpg",
+      "title": "Əl çörəyi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.5"
+    },
+    {
+      "id": "000",
+      "key": "0004",
+      "category": "Çörək məmulatları",
+      "img": "./assets/img/product3.jpg",
+      "title": "'Çörəkçi' Baton sadə",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.4"
+    },
+    {
+      "id": "001",
+      "key": "0005",
+      "category": "Bişmiş məhsullar",
+      "img": "./assets/img/product6.jpg",
+      "title": "Qoğal",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.5"
+    },
+    {
+      "id": "001",
+      "key": "0006",
+      "category": "Bişmiş məhsullar",
+      "img": "./assets/img/product14.jpg",
+      "title": "Şəkərbura",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.5"
+    },
+    {
+      "id": "001",
+      "key": "0007",
+      "category": "Bişmiş məhsullar",
+      "img": "./assets/img/product7.jpg",
+      "title": "Paxlava",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.5"
+    },
+    {
+      "id": "001",
+      "key": "0008",
+      "category": "Bişmiş məhsullar",
+      "img": "./assets/img/product15.jpg",
+      "title": "Badambura",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "0.5"
+    },
+    {
+      "id": "010",
+      "key": "0009",
+      "category": "Meyvələr",
+      "img": "./assets/img/product8.jpg",
+      "title": "Apelsin",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "5.5"
+    },
+    {
+      "id": "010",
+      "key": "0010",
+      "category": "Meyvələr",
+      "img": "./assets/img/product9.jpg",
+      "title": "Banan",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "3.3"
+    },
+    {
+      "id": "010",
+      "key": "0011",
+      "category": "Meyvələr",
+      "img": "./assets/img/product10.jpg",
+      "title": "Nar",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "2.9"
+    },
+    {
+      "id": "011",
+      "key": "0012",
+      "category": "Tərəvəzlər",
+      "img": "./assets/img/product11.jpg",
+      "title": "Pomidor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "2.9"
+    },
+    {
+      "id": "011",
+      "key": "0013",
+      "category": "Tərəvəzlər",
+      "img": "./assets/img/product12.jpg",
+      "title": "Xiyar",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "2.8"
+    },
+    {
+      "id": "011",
+      "key": "0014",
+      "category": "Tərəvəzlər",
+      "img": "./assets/img/product13.jpg",
+      "title": "Sogan",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "1.3"
+    },
+    {
+      "id": "151",
+      "key": "0015",
+      "category": "dlectron",
+      "img": "./assets/img/product13.jpg",
+      "title": "sss",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
+      "value": 1,
+      "price": "1.3"
+    }
+  ]
+}

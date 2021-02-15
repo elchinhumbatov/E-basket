@@ -1,0 +1,9 @@
+p {
+  font-size: 1.3em;
+  cursor: pointer;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #ekle {display: none;}
+}

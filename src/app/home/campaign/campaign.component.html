@@ -1,0 +1,30 @@
+<section class="kampaniya">
+  <div class="container">
+    <div class="miniTitle anim-items">
+      <h3>Kampaniyalar</h3>
+      <img src="./assets/img/uzor.png" alt="" />
+    </div>
+    <div class="myslider">
+      <div 
+        class="myslide"
+        (mousedown)="mDown($event)" 
+        (mouseup)="mUp($event)" 
+        (touchstart)="tchStart($event)" 
+        (touchend)="tchEnd($event)">
+      </div>
+      <div class="s-title">
+        <a href="">
+          <span class="s-title-h"></span><br>
+          <span class="s-title-b"></span>
+        </a>
+      </div>
+      <div class="s-dots"></div>
+      <div class="s-left-block" (click)="toLeft()">
+        <div class="s-left"></div>
+      </div>
+      <div class="s-right-block" (click)="toRight()">
+        <div class="s-right"></div>
+      </div>
+    </div>
+  </div>
+</section>

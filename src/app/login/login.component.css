@@ -1,0 +1,34 @@
+.loginWrap {
+  max-width: 400px; 
+  margin: auto;
+  padding: 100px 0 200px;
+}
+.loginHead {
+  margin: auto;
+  text-align: center;
+}
+.loginHead h1 a:last-child,
+.loginHead span {
+  color: #3c3c3c;
+  font-size: .7em;
+}
+.loginForm_wrap {
+  margin: 20px auto 0 auto;
+  width: 80%;
+}
+.loginForm p {margin: 20px 0 0 0;}
+.loginForm label {
+  display: block; 
+  margin: 0 0 5px 0;
+}
+.loginForm input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 70%;
+}
+#rememberme {width: inherit;}
+#login {
+  padding: 5px 10px;
+  margin: 0 50px 0 0;
+}

@@ -1,0 +1,40 @@
+<section class="products">
+  <div class="container">
+    <div class="left_list">
+      <h5> {{productListTitle}} </h5>
+      <ul>
+        <li *ngFor="let item of choosenProductsList.list; let idx = index"> 
+          <a 
+            routerLinkActive="active" 
+            [routerLink] = "[ '/products', choosenProductsList.id + '' + idx ]"> 
+              {{item}} 
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main_products">
+      <div *ngFor="let product of choosenProducts; let idx = index" class="elem_wrap">
+        <div class="elem">
+          <div class="elem_img">
+            <img [src]="product.img" alt="">
+          </div>
+          <div>
+            <div class="elem_title">
+              <h4>{{product.title}}</h4>
+              <p>{{product.text}}</p>
+            </div>
+            <div class="elem_count">
+              <input type="number" [(ngModel)] = 'product.value' min="1" max="20" step="1" />
+              <p><span class="price">{{(product.price * product.value).toFixed(1)}}</span> &#8380;</p>
+            </div>
+            <div class="elem_tocart">
+              <button (click)="addToCart(product, product.value)">Səbətə at</button>
+              <app-to-fav (click)="addToFav(product)"></app-to-fav> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-alert"></div>
+  </div>
+</section>

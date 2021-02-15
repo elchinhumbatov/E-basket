@@ -1,0 +1,39 @@
+.about {
+  background: url('../../../assets/img/brick-wall.png') ;
+  background-color: #ffffa2;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+}
+.container>div {max-width: 40%;}
+.aboutTitle {
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: transform .8s ease;
+}
+.aboutTitle._active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.aboutTitle p {
+  margin: 20px 0 0 0;
+  font: 1.1em/1.5 Rem;
+}
+.aboutImg {
+  transform: scale(0);
+  transition: transform .8s ease-in-out;
+}
+.aboutImg._active {
+  transform: scale(1);
+}
+.aboutImg img { width: 100%; }
+
+@media screen and (max-width: 600px) {
+  .about .container {flex-direction: column;}
+  .about .container>div {max-width: 80%;}
+  .aboutTitle {margin: 0 0 30px 0;}
+}

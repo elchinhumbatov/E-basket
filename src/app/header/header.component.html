@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <div class="container">
+      <div (click)="showCatalog()" class="navCat">
+        <div class="burger"> &#9776;</div>
+        <p>Kataloq</p>
+      </div>
+      <div class="logo">
+        <a class="navbar-brand" [routerLink]="['/']">
+          <img src="assets/img/logo-h.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="user">
+        <div class="user_item">
+          <a href="" class="fas fa-search"></a>
+        </div>
+        <div class="user_item">
+          <a routerLinkActive="active" [routerLink]="['/favorites']" class="fas fa-heart"></a>
+        </div>
+        <div class="user_item">
+          <a routerLinkActive="active" [routerLink]="['/checkout']" class="fas fa-shopping-cart"></a>
+        </div>
+        <div class="user_item">
+          <a routerLinkActive="active" [routerLink]="['/login']" class="fas fa-user"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

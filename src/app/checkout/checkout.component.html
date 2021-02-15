@@ -1,0 +1,37 @@
+<section>
+  <div class="container">
+    <div class="miniTitle">
+      <h2>Səbətiniz</h2>
+      <img src="./assets/img/uzor.png" alt="" />
+    </div>
+    <ng-template #empty>
+      <div id="emp-basket">
+        <h4>Səbətiniz boşdur.. ☹</h4>
+        <div id="emp-img"></div>
+      </div>
+    </ng-template>     
+    <div *ngIf="productsInCart.length; else empty" class="checkout-list">
+      <div>
+        <div> <p>Məhsul</p> </div>
+        <div> <p>Qiymət</p> </div>
+        <div> <p>Ədəd</p> </div>
+      </div>
+      <div *ngFor="let elem of productsInCart; let i=index">
+        <div class="flex_div">
+          <div title="Səbətdən sil" id="x-btn" (click)="deleteProduct(elem)"> &#10060; </div>
+          <div>
+            <img [src]="elem.img" alt="">
+            <p>{{elem.title}}</p>
+          </div>
+        </div>
+        <div> <p><span class="price">{{(elem.price * +obj.count[i]).toFixed(1)}} </span> &#8380;</p> </div>
+        <div> <input type="number" [(ngModel)] = 'counts[i]' min="1" max="20" (change)='onInpChange()' /> </div>
+      </div>
+      <div>
+        <div> <p>Yekun məbləğ</p> </div>
+        <div> <p><strong><span class="total">{{ totalSum.toFixed(1) }}</span> &#8380; </strong></p> </div>
+        <div> <a class="finalBtn" href="">Sifarişi tamamla</a> </div>
+      </div>
+    </div>
+  </div>
+</section>

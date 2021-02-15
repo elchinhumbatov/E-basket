@@ -1,0 +1,103 @@
+.kampaniya {
+  padding: 0 0 70px 0;
+  background: url('../../.././assets/img/crisp-paper-ruffles.png');
+}
+.miniTitle {
+  padding: 50px 0;
+  text-align: center;
+}
+.myslider {
+  position: relative;
+  background-color: rgba(0, 0, 0, .4);
+}
+.myslide {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.myslide, .myslider {
+  margin: auto;
+  width: 70vw;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.s-title {
+  position: absolute;
+  z-index: 5;
+  backdrop-filter: blur(7px);
+  width: 68vw;
+  height: 100px;
+  padding: 20px 40px;
+  color: #fff;
+  border-radius: 10px;
+  left: 1vw;
+  bottom: 6%;
+  }
+  .s-title a {
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+  }
+  .s-dots {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    height: 15px;
+    transform: translate(-50%, 0);
+    display: flex;
+    text-align: center;
+  }
+  .s-right-block, .s-left-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    cursor: pointer;
+  }
+  .s-right-block {right: 0;}
+  .s-left, .s-right {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+  }
+  .s-left { 
+    background-image: url('../../.././assets/img/chevron-left.svg'); 
+    transform: translate(-25px, 0);
+  }
+  .s-right { 
+    background-image: url('../../.././assets/img/chevron-right.svg'); 
+    transform: translate(25px, 0);
+  }
+  .myslider:hover .s-left {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  .myslider:hover .s-right {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  .s-left-block:hover .s-left {background-image: url('../../.././assets/img/chevron-left-black.svg'); }
+  .s-right-block:hover .s-right {background-image: url('../../.././assets/img/chevron-right-black.svg'); }
+  .s-title-h {
+    font: 600 1.5em Arial;
+  }
+
+  @media screen and (max-width: 1024px) {
+  .myslider, .myslide {width: 80vw; height: 60vh;}
+  .s-title {width: 78vw; padding: 15px;}
+  }
+  @media screen and (max-width: 600px) {
+    .s-left, .s-right {width: 30px; height: 30px;}
+    .miniTitle {padding: 25px 0;}
+  }
+  @media screen and (max-width: 400px) {
+    .myslider, .myslide {width: 95vw; height: 60vh;}
+    .s-title {width: 93vw; padding: 12px; bottom: 8%;}
+  }

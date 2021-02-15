@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+@import './assets/style/slider.css';
+@font-face { font-family: Reg; src: url('./assets/fonts/Roboto-Medium.ttf'); }
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f6f7;
+}
+.container {
+  max-width: 1190px;
+  margin: auto;
+}
+h2,h3,h4,h5,h6 {margin: 0 0 20px 0; color: #3c3c3c;}
+h2 { font: 600 1.4em Reg; }
+h3 { font: 1.3em Reg; }
+h4 { font: 1.2em Reg; margin: 0 0 20px 0;}
+a, p {color: #3c3c3c; text-decoration: none;}
+ul {list-style: none;}
+img {object-fit: cover;}
+.active {color: #7e2baa; font-weight: bold;}
+.loader-wrap {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightslategrey;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #f6f6f7;
+}

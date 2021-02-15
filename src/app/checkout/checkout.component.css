@@ -1,0 +1,78 @@
+section {
+  padding: 50px 0 100px 0;
+}
+.miniTitle {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+p {margin: 0;}
+h2 {
+  font-size: 1.7em;
+  text-align: center;
+}
+.checkout-list {
+  margin: auto;
+  width: 70%;
+}
+.checkout-list>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+  padding: 5px 20px;
+}
+.checkout-list>div>* {
+  width: 25%;
+  text-align: center;
+}
+.checkout-list>div>*:first-child {
+  width: 50%;
+  text-align: left;
+}
+.flex_div {
+  display: flex;
+  align-items: center;
+}
+.flex_div>* {
+  margin: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+.flex_div img {
+  width: 100px;
+  height: 75px;
+  margin: 0 10px 0 0;
+}
+input {
+  width: 50px;
+}
+.finalBtn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3c3c3c;
+  color: #fcfcfc;
+}
+#x-btn {
+  cursor: pointer;
+}
+#emp-img {
+  width: 250px;
+  height: 300px;
+  margin: auto;
+  background: url('../../assets/img/empty-basket.gif') 48% 40%;
+}
+#emp-basket {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+  .checkout-list {width: 90%;}
+}
+
+@media screen and (max-width: 600px) {
+  .flex_div>div:nth-child(2) { flex-direction: column; }
+  .flex_div img {
+    margin: 0 0 5px 0;
+  }
+}

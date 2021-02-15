@@ -1,0 +1,118 @@
+.catalog {
+  position: fixed;
+  z-index: 80;
+  left: -150%;
+  top: 0;
+  bottom: 0;
+  width: 25em;
+  background-color: #f6f6f7;
+  padding: 20px;
+  overflow-y: auto;
+  transition: left .3s ease;
+}
+.cat_wrap { padding: 0 0 0 50px; }
+.catalog_close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 40px 0;
+}
+.catalog_close a {font: 600 1.1em Reg;}
+.catalog_close span {
+  position: relative;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+.catalog_close span:before,
+.catalog_close span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background-color: #3c3c3c;
+  left: 20px;
+  top: 5px;
+}
+.catalog_close span:before {transform: rotate(45deg);}
+.catalog_close span:after {transform: rotate(-45deg);}
+
+.catalog ul, .subCatalog ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 20px 0 0;
+}
+.catalog ul li { 
+  color: #3c3c3c;
+  padding: 10px 5px;
+  cursor: pointer; 
+  font: 1.1em Reg;
+}
+.catalog ul li:after, .subCatalog ul li:after {
+  content: '';
+  display: block;
+  border-bottom: solid 3px #3c3c3c;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;  
+}
+.catalog ul li:hover:after, .subCatalog ul li:hover:after {transform: scaleX(1); }
+
+.subCatalog {
+  position: fixed;
+  z-index: 70;
+  left: -150%;
+  top: 0;
+  bottom: 0;
+  width: 25em;
+  background-color: #f6f6f7;
+  padding: 20px;
+  overflow-y: auto;
+  transition: left .3s ease;
+}
+.subCatalog ul li {
+  color: #3c3c3c;
+  padding: 10px 5px;
+  font: 1.1em Reg;
+}
+.subCatalog_close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 0 20px;
+}
+.subCatalog_close span {
+  position: relative;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+.subCatalog_close span:after, 
+.subCatalog_close span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background-color: #3c3c3c;
+  left: 20px;
+  top: 5px;
+}
+.subCatalog_close span:before {transform: rotate(45deg);}
+.subCatalog_close span:after {transform: rotate(-45deg);}
+.cat_wrap h2 { 
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .catalog {width: 85%;}
+  .cat_wrap { padding: 10px 10px 10px 20px; }
+  .catalog ul li {font: 1.2em Reg;}
+  .subCatalog {width: 85%;}
+  .cat_wrap h2 {font-size: 1.2em;}
+}
+@media screen and (max-width: 400px) {
+  .catalog ul li {font: .9em Reg;}
+}

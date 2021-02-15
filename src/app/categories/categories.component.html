@@ -1,0 +1,39 @@
+<div 
+  class="catalog" 
+  (touchstart)="tchStart($event)" 
+  (touchend)="tchEnd($event)">
+    <div class="catalog_close">
+      <span (click)="closeCatalogService.closeCatalog()"></span>
+    </div>
+    <div class="cat_wrap">
+      <h2>Kataloq</h2>
+      <ul>
+        <li 
+          (click)="showSubCat($event)" 
+          *ngFor="let n of cat; let catIdx = index" 
+          [class]="'c'+(catIdx)">
+          {{n}}
+        </li>
+      </ul>
+    </div>
+</div>
+<div 
+  class="subCatalog" 
+  (touchstart)="tchStart($event)" 
+  (touchend)="subTchEnd($event)">
+
+    <div class="subCatalog_close">
+      <span (click)="closeSubCat()"></span>
+    </div>
+    <div class="cat_wrap">
+      <h3></h3>
+      <ul>
+        <li *ngFor="let item of subcatN.list; let subCatIdx = index">
+          <a  [routerLink]="['/products', subcatN.id + '' + subCatIdx]" 
+              (click)="closeCatalogService.closeCatalog()" >
+            {{item}}
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
