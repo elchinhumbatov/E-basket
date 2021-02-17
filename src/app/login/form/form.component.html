@@ -1,0 +1,33 @@
+<div class="loginForm_wrap">
+  <form class="loginForm" method="post" [formGroup] = "form" (ngSubmit) = "onLogin()" >
+    <div class="form-control">
+      <label>Email</label>
+      <input type="email" autocomplete="username" formControlName = "email" />
+      <div 
+        *ngIf="form.get('email').invalid && form.get('email').touched"
+        class="validation"
+      >
+        <small *ngIf="form.get('email').errors.required">Mail xanası boş ola bilməz</small>
+        <small *ngIf="form.get('email').errors.email">Düzgün mail daxil edin</small>
+      </div>
+    </div>
+    <div class="form-control">
+      <label>Şifrə</label>
+      <input type="password"  formControlName = "password" />
+      <div 
+        *ngIf="form.get('password').invalid && form.get('password').touched"
+        class="validation"
+      >
+        <small *ngIf="form.get('password').errors.required">Şifrə xanası boş ola bilməz</small>
+        <small *ngIf="form.get('password').errors.minlength">Minimum simvol sayi {{ form.get('password').errors.minlength.requiredLength }}</small>
+      </div>
+    </div>
+    <div class="form-control">
+      <label id="rememberme"><input name="rememberme" type="checkbox" id="rememberme"> Yadda saxla</label>
+    </div>
+    <div class="form-control">
+      <button type="submit" id="login" [disabled] = "form.invalid">Daxil ol</button>
+      <span><a [routerLink] = "['/login', 'forget']">Şifrəni unutdun?</a></span>
+    </div>
+  </form>
+</div>

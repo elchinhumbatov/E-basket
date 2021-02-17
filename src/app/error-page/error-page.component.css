@@ -1,0 +1,12 @@
+section {
+  text-align: center;
+  margin: 50px 0;
+}
+a {
+  color: indigo;
+  text-decoration: underline;
+}
+fa-icon {
+  color: indigo;
+  font-size: 70px;
+}

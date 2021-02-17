@@ -1,0 +1,65 @@
+<div class="loginForm_wrap">
+  <form method="post" class="regForm" [formGroup] = "regForm" (ngSubmit) = "onSubmit()">
+    <div class="form-control">
+      <Label>Adiniz</Label>
+      <input type="text" placeholder="Adiniz" formControlName = "name">
+      <div 
+        *ngIf="regForm.get('name').invalid && regForm.get('name').touched" 
+        class="validation">
+        <small *ngIf="regForm.get('name').errors.required">Ad xanası boş ola bilməz</small>
+        <small *ngIf="regForm.get('name').errors.minlength">Minimum simvol sayi {{regForm.get('name').errors.minlength.requiredLength}} </small>
+      </div>
+    </div>
+    <div class="form-control">
+      <Label>Soyadiniz</Label>
+      <input type="text" placeholder="Soyadiniz" formControlName = "surname">
+      <div 
+        *ngIf="regForm.get('surname').invalid && regForm.get('surname').touched" 
+        class="validation">
+        <small *ngIf="regForm.get('surname').errors.required">Soyad xanası boş ola bilməz</small>
+        <small *ngIf="regForm.get('surname').errors.minlength">Minimum simvol sayi {{regForm.get('surname').errors.minlength.requiredLength}} </small>
+      </div>
+    </div>
+    <div class="form-control">
+      <Label>Email</Label>
+      <input type="email" placeholder="Email" formControlName = "email">
+      <div 
+        *ngIf="regForm.get('email').invalid && regForm.get('email').touched" 
+        class="validation">
+        <small *ngIf="regForm.get('email').errors.required">Mail xanası boş ola bilməz</small>
+        <small *ngIf="regForm.get('email').errors.email">Düzgün mail daxil edin</small>
+      </div>
+    </div>
+    <div class="form-control">
+      <Label>Şifrə</Label>
+      <input type="password" placeholder="********" formControlName = "password">
+      <div 
+        *ngIf="regForm.get('password').invalid && regForm.get('password').touched" 
+        class="validation">
+        <small *ngIf="regForm.get('password').errors.required">Şifrə xanası boş ola bilməz</small>
+        <small *ngIf="regForm.get('password').errors.minlength">Minimum simvol sayi {{regForm.get('password').errors.minlength.requiredLength}} </small>
+      </div>
+    </div>
+    <div class="form-control">
+      <Label>Tekrar Şifrə</Label>
+      <input type="password" placeholder="********" formControlName = "password2">
+      <div 
+        *ngIf="regForm.get('password2').invalid && regForm.get('password2').touched" 
+        class="validation">
+        <small *ngIf="regForm.get('password2').errors.required">Şifrə xanası boş ola bilməz</small>
+        <small *ngIf="regForm.get('password2').errors.minlength">Minimum simvol sayi {{regForm.get('password2').errors.minlength.requiredLength}} </small>
+      </div>
+    </div>
+    <div class="form-control form-file">
+      <label id="fileLabel">
+        <span>Foto secin</span>
+        <fa-icon [icon]="faUpload"></fa-icon>
+      </label>
+      <input type="file" accept="image/*" class="file" />
+      <span class="fileName">kjnkjjknjkbjk</span>
+    </div>
+    <div class="form-control">
+      <button type="submit">Qeydiyyatdan keç</button>
+    </div>
+  </form>
+</div>

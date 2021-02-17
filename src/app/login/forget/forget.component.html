@@ -1,0 +1,17 @@
+<div class="loginForm_wrap">
+  <form method="post" class="loginForm" [formGroup] = "form" (ngSubmit) = "onSubmit()">
+    <div class="form-control">
+      <label>Email</label>
+      <input type="text" formControlName = "email">
+      <div  
+        *ngIf="form.get('email').invalid && form.get('email').touched"
+        class="validation">
+        <small *ngIf="form.get('email').errors.required">Mail xanası boş ola bilməz</small>
+        <small *ngIf="form.get('email').errors.email">Düzgün mail daxil edin</small>
+      </div>
+    </div>
+    <div class="form-control">
+      <button type="submit">Şifrəni göndər</button>
+    </div>
+  </form>
+</div>
