@@ -1,4 +1,9 @@
 <p (click)="status = !status">
-  <span [ngClass] = "status ? 'far' : 'fas' " class="fa-heart"></span> 
+  <ng-container *ngIf="status; else elseTemplate">
+    <fa-icon [icon]="faHeartBroken"></fa-icon>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <fa-icon [icon]="faHeart"></fa-icon>
+  </ng-template>
   <span id="ekle"> Ekle</span>
 </p>

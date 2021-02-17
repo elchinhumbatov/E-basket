@@ -32,11 +32,10 @@ export class ProductsComponent implements OnInit {
       });
     });
   }
-  // tslint:disable: typedef
-  addToCart(product, count) {
+  addToCart(product, count): void {
     this.addToCartService.add(product, count);
   }
-  addToFav(product) {
+  addToFav(product): void {
     this.addToFavService.add(product);
   }
 }

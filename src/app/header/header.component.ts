@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadJSONService } from '../services/load-json.service';
-import { SendEventService } from '../services/send-event.service';
+import {Title} from '@angular/platform-browser';
+import { faSearch, faUser, faShoppingCart, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -8,18 +9,24 @@ import { SendEventService } from '../services/send-event.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(public loadjson: LoadJSONService, private sendEventService: SendEventService) { }
+  faSearch = faSearch;
+  faUser = faUser;
+  faShoppingCart = faShoppingCart;
+  faHeart = faHeart;
+  constructor(
+    public loadjson: LoadJSONService,
+    private titleService: Title) { }
 
   ngOnInit(): void {
   }
-  // tslint:disable: typedef
-  showCatalog() {
+  showCatalog(): void {
     $('.catalog').css('left', '0');
     $('.subCatalog').css('left', '0');
     $('.overlay').css('display', 'block');
     $('body').css('overflow', 'hidden');
     $('.catalog').css('left', '0');
-    // this.sendEventService.sendEvent();
+  }
+  setTitle(title): void {
+    this.titleService.setTitle(title);
   }
 }

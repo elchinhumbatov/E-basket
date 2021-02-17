@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faHeart, faHeartBroken } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-to-fav',
@@ -6,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./to-fav.component.css']
 })
 export class ToFavComponent implements OnInit {
+  faHeart = faHeart;
+  faHeartBroken = faHeartBroken;
   @Input() favStatus;
   status = true;
   constructor() { }

@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class CloseCatalogService {
 
   constructor() { }
-  // tslint:disable: typedef
-  closeCatalog() {
+
+  closeCatalog(): void {
     $('.catalog').css('left', '-150%');
     $('.subCatalog').css({left: '-150%', 'z-index': '70'});
     $('.overlay').css('display', 'none');

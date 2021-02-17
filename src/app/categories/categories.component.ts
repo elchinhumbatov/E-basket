@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 import { CloseCatalogService } from '../services/close-catalog.service';
 import { LoadJSONService } from '../services/load-json.service';
@@ -14,7 +15,6 @@ export interface SubcatN {
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-  // tslint:disable: typedef
   cat = [];
   subcat = [];
   subcatN: SubcatN = {};
@@ -23,7 +23,8 @@ export class CategoriesComponent implements OnInit {
   catIdx;
   constructor(
     public closeCatalogService: CloseCatalogService,
-    public loadjsonService: LoadJSONService
+    public loadjsonService: LoadJSONService,
+    private titleService: Title
     ) {}
 
   ngOnInit(): void {
@@ -32,20 +33,20 @@ export class CategoriesComponent implements OnInit {
       this.subcat = response.subcat;
     });
   }
-  showSubCat(event){
+  showSubCat(event): void {
     this.catIdx = event.target.className.slice(1);
     this.subcatN = this.subcat[this.catIdx];
     $('.subCatalog h3').html(this.cat[this.subcatN.id.toString().slice(1)]);
     if (window.innerWidth > 600) { $('.subCatalog').css('left', '25em'); }
     else { $('.subCatalog').css({left: '0', 'z-index': '90'}); }
   }
-  closeSubCat() {
+  closeSubCat(): void {
     $('.subCatalog').css('left', '-100%');
   }
-  tchStart(event){
+  tchStart(event): void {
     this.x1 = event.touches[0].clientX;
   }
-  tchEnd(event) {
+  tchEnd(event): void {
     this.x2 = event.changedTouches[0].clientX;
     if ((this.x1 - this.x2) >= 80) {
       $('.catalog').css('left', '-150%');
@@ -54,8 +55,12 @@ export class CategoriesComponent implements OnInit {
       $('body').css('overflow', 'auto');
      }
   }
-  subTchEnd(event) {
+  subTchEnd(event): void {
     this.x2 = event.changedTouches[0].clientX;
     if ((this.x1 - this.x2) >= 80) { this.closeSubCat(); }
+  }
+  goToProducts(): void {
+    this.closeCatalogService.closeCatalog();
+    this.titleService.setTitle('Products');
   }
 }

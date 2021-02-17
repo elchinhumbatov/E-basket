@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import * as $ from 'jquery';
 
 
@@ -23,6 +24,10 @@ import { FeedbackComponent } from './home/feedback/feedback.component';
 import { ProductsComponent } from './products/products.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ToFavComponent } from './to-fav/to-fav.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { ForgetComponent } from './login/forget/forget.component';
+import { RegFormComponent } from './login/reg-form/reg-form.component';
+import { FormComponent } from './login/form/form.component';
 
 @NgModule({
   declarations: [
@@ -40,15 +45,21 @@ import { ToFavComponent } from './to-fav/to-fav.component';
     FeedbackComponent,
     ProductsComponent,
     CheckoutComponent,
-    ToFavComponent
+    ToFavComponent,
+    ErrorPageComponent,
+    ForgetComponent,
+    RegFormComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

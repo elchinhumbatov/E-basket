@@ -30,7 +30,7 @@
       <ul>
         <li *ngFor="let item of subcatN.list; let subCatIdx = index">
           <a  [routerLink]="['/products', subcatN.id + '' + subCatIdx]" 
-              (click)="closeCatalogService.closeCatalog()" >
+              (click)="goToProducts()" >
             {{item}}
           </a>
         </li>

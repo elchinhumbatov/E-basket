@@ -7,12 +7,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./basket.component.css']
 })
 export class BasketComponent implements OnInit {
+  title = '';
 
   constructor(private route1: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route1.params.subscribe(param => {
-      console.log(param.idx);
+      this.title = param.idx;
     });
   }
 

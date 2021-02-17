@@ -10,7 +10,7 @@
       <div ngxSlickItem *ngFor="let basket of baskets; let idx = index" class="slide card">
         <div class="cardImg">
           <img [src]="basket.img" alt="" />
-          <a [routerLink]="['/basket', idx]">Səbətə keç</a>
+          <a (click)="setTitle(basket.title)" [routerLink]="['/basket', basket.title]">Səbətə keç</a>
         </div>
         <div class="cardTitle">
           <h4> {{basket.title}} </h4>

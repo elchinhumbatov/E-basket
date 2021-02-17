@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CloseCatalogService } from './services/close-catalog.service';
+import {Title} from '@angular/platform-browser';
+import { faHome, faUser, faShoppingCart, faHeart } from '@fortawesome/free-solid-svg-icons';
 declare const animElements: any;
 
 @Component({
@@ -8,13 +10,17 @@ declare const animElements: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(public closeCatalogService: CloseCatalogService) {}
-  // tslint:disable: typedef
-  // tslint:disable: only-arrow-functions
+  faHome = faHome;
+  faUser = faUser;
+  faShoppingCart = faShoppingCart;
+  faHeart = faHeart;
+  constructor(
+    public closeCatalogService: CloseCatalogService,
+    private titleService: Title) {}
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true);
   }
-  scroll() {
+  scroll(): void {
     animElements();
     if (window.pageYOffset > 10) {
       $('nav').css('opacity', '0');
@@ -30,5 +36,8 @@ export class AppComponent implements OnInit {
       $('nav').css('position', 'absolute');
     }
   }
-  toTop(){ window.scrollTo(0, 0); }
+  toTop(): void { window.scrollTo(0, 0); }
+  setTitle(title): void {
+    this.titleService.setTitle(title);
+  }
 }

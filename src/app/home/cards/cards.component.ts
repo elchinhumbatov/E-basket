@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 import { LoadJSONService } from 'src/app/services/load-json.service';
 
@@ -34,11 +35,14 @@ export class CardsComponent implements OnInit {
       }
     ]
   };
-  constructor(private loadJsonService: LoadJSONService) { }
+  constructor(private loadJsonService: LoadJSONService, private titleService: Title) { }
 
   ngOnInit(): void {
     this.loadJsonService.loadJson().subscribe(response => {
       this.baskets = response.baskets;
     });
+  }
+  setTitle(title): void {
+    this.titleService.setTitle(title);
   }
 }

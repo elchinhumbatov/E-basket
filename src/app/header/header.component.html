@@ -6,22 +6,37 @@
         <p>Kataloq</p>
       </div>
       <div class="logo">
-        <a class="navbar-brand" [routerLink]="['/']">
+        <a class="navbar-brand" [routerLink]="['/']" (click)="setTitle('Main Page')">
           <img src="assets/img/logo-h.png" alt="Logo" />
         </a>
       </div>
       <div class="user">
         <div class="user_item">
-          <a href="" class="fas fa-search"></a>
+          <fa-icon [icon]="faSearch"></fa-icon>
         </div>
         <div class="user_item">
-          <a routerLinkActive="active" [routerLink]="['/favorites']" class="fas fa-heart"></a>
+          <a 
+            (click)="setTitle('Favoriler')"
+            routerLinkActive="active" 
+            [routerLink]="['/favorites']">
+            <fa-icon [icon]="faHeart"></fa-icon>
+          </a>
         </div>
         <div class="user_item">
-          <a routerLinkActive="active" [routerLink]="['/checkout']" class="fas fa-shopping-cart"></a>
+          <a 
+            (click)="setTitle('Sebetiniz')" 
+            routerLinkActive="active"
+            [routerLink]="['/checkout']">
+            <fa-icon [icon]="faShoppingCart"></fa-icon>
+          </a>
         </div>
         <div class="user_item">
-          <a routerLinkActive="active" [routerLink]="['/login']" class="fas fa-user"></a>
+          <a 
+            (click)="setTitle('Kabinet')" 
+            routerLinkActive="active" 
+            [routerLink]="['/login', 'form']">
+            <fa-icon [icon]="faUser"></fa-icon>
+          </a>
         </div>
       </div>
     </div>

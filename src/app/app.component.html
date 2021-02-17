@@ -3,10 +3,39 @@
 <app-footer></app-footer>
 <app-categories></app-categories>
 <div class="phoneNav">
-  <div class="phoneNav_item"><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']" class="fas fa-home"></a></div>
-  <div class="phoneNav_item"><a routerLinkActive="active" [routerLink]="['/favorites']" class="fas fa-heart"></a></div>
-  <div class="phoneNav_item"><a routerLinkActive="active" [routerLink]="['/checkout']" class="fas fa-shopping-cart"></a></div>
-  <div class="phoneNav_item"><a routerLinkActive="active" [routerLink]="['/login']" class="fas fa-user"></a></div>
+  <div class="phoneNav_item">
+    <a 
+      (click)="setTitle('Main Page')" 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{exact: true}" 
+      [routerLink]="['/']">
+      <fa-icon [icon]="faHome"></fa-icon>
+    </a>
+  </div>
+  <div class="phoneNav_item">
+    <a 
+      (click)="setTitle('Favoriler')" 
+      routerLinkActive="active" 
+      [routerLink]="['/favorites']">
+      <fa-icon [icon]="faHeart"></fa-icon>
+  </a>
+  </div>
+  <div class="phoneNav_item">
+    <a 
+      (click)="setTitle('Sebetiniz')" 
+      routerLinkActive="active" 
+      [routerLink]="['/checkout']">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+  </a>
+  </div>
+  <div class="phoneNav_item">
+    <a 
+      (click)="setTitle('Kabinet')" 
+      routerLinkActive="active" 
+      [routerLink]="['/login', 'form']">
+      <fa-icon [icon]="faUser"></fa-icon>
+  </a>
+  </div>
 </div>
 <div class="overlay" (click)="closeCatalogService.closeCatalog()"></div>
 <div (click)="toTop()" class="toTop"></div>

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class LoadJSONService {
   constructor(private http: HttpClient) { }
-  // tslint:disable: typedef
+
   loadJson(): Observable<any> {
     return this.http.get('./assets/myjson.json');
   }

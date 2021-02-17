@@ -8,7 +8,6 @@ import { AddToFavService } from '../services/add-to-fav.service';
   styleUrls: ['./favorites.component.css']
 })
 export class FavoritesComponent implements OnInit {
-  // tslint:disable: typedef
   elems = [];
   prices = [];
   constructor(
@@ -19,11 +18,12 @@ export class FavoritesComponent implements OnInit {
   ngOnInit(): void {
     this.elems = this.addToFavService.getProducts();
   }
-  addToCart(product, count) {
+  addToCart(product, count): void {
     this.addToCartService.add(product, count);
   }
-  removeFromFav(product) {
+  removeFromFav(product): void {
     const idx = this.elems.findIndex(item => item.key === product.key);
     this.elems.splice(idx, 1);
+    this.addToFavService.onRemove(product);
   }
 }

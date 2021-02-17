@@ -199,52 +199,52 @@
   "baskets": [
     {
       "img": "./assets/img/card0.jpg",
-      "title": "7/30",
+      "title": "Test1 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card1.jpg",
-      "title": "Qonağımız var",
+      "title": "Test2 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card2.jpg",
-      "title": "Qayğı səbəti",
+      "title": "Test3 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card3.jpg",
-      "title": "Bayram səbəti",
+      "title": "Test4 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card4.jpg",
-      "title": "Dünya mətbəxi",
+      "title": "Test5 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card5.jpg",
-      "title": "Səfər Səbəti",
+      "title": "Test6 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card6.jpg",
-      "title": "Uşaqlarımızla bişirdiklərimiz",
+      "title": "Test7 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card7.jpg",
-      "title": "Yaşıl səbət",
+      "title": "Test8 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card8.jpg",
-      "title": "Apteçkam",
+      "title": "Test9 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     },
     {
       "img": "./assets/img/card9.jpg",
-      "title": "Ev Heyvanları",
+      "title": "Test10 səbəti",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!"
     }
   ],

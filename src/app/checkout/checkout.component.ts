@@ -12,7 +12,6 @@ export interface Obj {
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
-  // tslint:disable: typedef
   // tslint:disable: prefer-for-of
   counts = [];
   prices = [];
@@ -31,7 +30,7 @@ export class CheckoutComponent implements OnInit {
     }
     this.totalSum.toFixed(1);
   }
-  onInpChange() {
+  onInpChange(): void {
     this.prices = [];
     this.totalSum = 0;
     for (let i = 0; i < this.productsInCart.length; i++) {
@@ -40,9 +39,10 @@ export class CheckoutComponent implements OnInit {
     }
     this.totalSum.toFixed(1);
   }
-  deleteProduct(elem) {
+  deleteProduct(elem): void {
     const idx = this.productsInCart.findIndex(item => item.key === elem.key);
     this.productsInCart.splice(idx, 1);
+    this.addToCartService.onDelete(elem);
     this.counts.splice(idx, 1);
     this.prices.splice(idx, 1);
     this.totalSum = this.prices.reduce((sum, current) => {
