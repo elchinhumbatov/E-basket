@@ -1,0 +1,32 @@
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+.carousel {
+  position: relative;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.slick-dots button {
+  font-size: 0;
+  border: 2px solid #444;
+  outline: none;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #444;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.slick-dots li.slick-active button {
+  background-color: #f6f6f7;
+}
+.slide:focus { outline: none;}
