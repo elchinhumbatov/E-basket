@@ -27,6 +27,8 @@ p {margin: 0;}
   padding: 15px 10px;
   background: #3c3c3c;
   color: #fcfcfc;
+}
+#inputs input {
   border-radius: 15px 0 0 15px;
 }
 #inputs button {
