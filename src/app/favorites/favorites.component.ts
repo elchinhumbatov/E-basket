@@ -21,9 +21,12 @@ export class FavoritesComponent implements OnInit {
   addToCart(product, count): void {
     this.addToCartService.add(product, count);
   }
-  removeFromFav(product): void {
-    const idx = this.elems.findIndex(item => item.key === product.key);
-    this.elems.splice(idx, 1);
-    this.addToFavService.onRemove(product);
+  removeFromFav(num, product): void {
+    $('.e' + num).css('transform', 'scale(0)');
+    setTimeout(() => {
+      const idx = this.elems.findIndex(item => item.key === product.key);
+      this.elems.splice(idx, 1);
+      this.addToFavService.onRemove(product);
+    }, 500);
   }
 }

@@ -20,6 +20,9 @@ h4 {
   width: 23%;
   margin: 10px;
   border: 1px solid #f6f6f7;
+  transform: scale(1);
+  transform-origin: right bottom;
+  transition: transform .5s ease;
 }
 .elem_wrap:hover {
   border: 1px solid #3c3c3c;

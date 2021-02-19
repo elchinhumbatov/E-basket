@@ -64,6 +64,11 @@ input {
 #emp-basket {
   text-align: center;
 }
+.hidden {
+  transform: scale(1);
+  transform-origin: left;
+  transition: transform .5s ease;
+}
 
 
 @media screen and (max-width: 900px) {

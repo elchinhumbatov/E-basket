@@ -10,6 +10,7 @@ import { FormComponent } from './login/form/form.component';
 import { LoginComponent } from './login/login.component';
 import { RegFormComponent } from './login/reg-form/reg-form.component';
 import { ProductsComponent } from './products/products.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {path: '', component: HomepageComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'checkout', component: CheckoutComponent},
   {path: 'products/:id', component: ProductsComponent},
   {path: 'basket/:idx', component: BasketComponent},
+  {path: 'search', component: SearchComponent},
   {path: 'error', component: ErrorPageComponent},
   {path: '**', redirectTo: '/error'}
 ];

@@ -2,16 +2,16 @@
   <div class="container">
     <div class="fav_header">
       <h3>Sevimli məhsullarınız</h3>
-      <img src="./assets/img/uzor.png" alt="" />
+      <img src="assets/img/uzor.png" alt="" />
     </div>
     <ng-template #empty>
       <div id="emp-basket">
         <h4>Favorites boşdur.. ☹</h4>
-        <img src="../../assets/img/epty-fav.png" alt="">
+        <img src="assets/img/epty-fav.png" alt="">
       </div>
     </ng-template>  
     <div *ngIf="elems.length; else empty" class="fav_body">
-      <div *ngFor="let product of elems" class="elem_wrap">
+      <div *ngFor="let product of elems; let idx = index;" class="elem_wrap e{{idx}}">
         <div class="elem">
           <div class="elem_img">
             <img [src]="product.img" alt="">
@@ -23,7 +23,7 @@
             </div>
             <div class="elem_tocart">
               <button (click)="addToCart(product, product.value)">Səbətə at</button>
-              <app-to-fav (click)="removeFromFav(product)" [favStatus] = "false"></app-to-fav>
+              <app-to-fav (click)="removeFromFav(idx,product)" [favStatus] = "false"></app-to-fav>
             </div>
           </div>
         </div>

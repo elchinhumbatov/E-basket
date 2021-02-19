@@ -1,0 +1,57 @@
+<section>
+  <div id="search_head">
+      <div id="back">
+        <div></div>
+      </div>
+      <div id="inputs">
+        <input type="search" [(ngModel)] = 'search' (keydown)="onEnter($event, search)" />
+        <button type="submit" (click)="onSubmit(search)"><fa-icon [icon]="faSearch"></fa-icon></button>
+      </div>
+  </div>
+  <div class="container">
+    <div id="search_main" >
+      <ng-container *ngIf="foundProducts[0]!= 1; else empty">
+        <h1 style='text-align: center;'>Axtarish neticeleri</h1>
+        <h2 style='text-align: center;' *ngIf="!foundProducts.length">Heçnə tapılmadı...</h2>
+        <div class="main_products">
+          <div *ngFor="let product of foundProducts; let idx = index" class="elem_wrap">
+            <div class="elem">
+              <div class="elem_img">
+                <img [src]="product.img" alt="">
+              </div>
+              <div>
+                <div class="elem_title">
+                  <h4>{{product.title}}</h4>
+                  <p>{{product.text}}</p>
+                </div>
+                <div class="elem_count">
+                  <input type="number" [(ngModel)] = 'product.value' min="1" max="20" step="1" />
+                  <p><span class="price">{{(product.price * product.value).toFixed(1)}}</span> &#8380;</p>
+                </div>
+                <div class="elem_tocart">
+                  <button (click)="addToCart(product, product.value)">Səbətə at</button>
+                  <app-to-fav (click)="addToFav(product)"></app-to-fav> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      <ng-template #empty>
+        <div id="empty">
+          <h1 style='text-align: center;'>Ne axtarirsiniz?</h1>
+          <div id="advice">
+            <a [routerLink]="['/products', '010']">Meyvə</a>
+            <a [routerLink]="['/products', '000']">Çörək</a>
+            <a [routerLink]="['/products', '011']">Tərəvəz</a>
+            <a [routerLink]="['/products', '151']">Glo</a>
+            <a [routerLink]="['/products', '001']">Bişmiş</a>
+            <a [routerLink]="['/products', '030']">Toyuq</a>
+            <a [routerLink]="['/products', '065']">Dondurma</a>
+          </div>
+        </div>
+      </ng-template>
+      
+    </div>
+  </div>
+</section>

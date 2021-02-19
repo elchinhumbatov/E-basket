@@ -39,14 +39,17 @@ export class CheckoutComponent implements OnInit {
     }
     this.totalSum.toFixed(1);
   }
-  deleteProduct(elem): void {
-    const idx = this.productsInCart.findIndex(item => item.key === elem.key);
-    this.productsInCart.splice(idx, 1);
-    this.addToCartService.onDelete(elem);
-    this.counts.splice(idx, 1);
-    this.prices.splice(idx, 1);
-    this.totalSum = this.prices.reduce((sum, current) => {
-      return sum + current;
-    }, 0);
+  deleteProduct(elem, i): void {
+    $('.e' + i).css('transform', 'scale(0)');
+    setTimeout(() => {
+      const idx = this.productsInCart.findIndex(item => item.key === elem.key);
+      this.productsInCart.splice(idx, 1);
+      this.addToCartService.onDelete(elem);
+      this.counts.splice(idx, 1);
+      this.prices.splice(idx, 1);
+      this.totalSum = this.prices.reduce((sum, current) => {
+        return sum + current;
+      }, 0);
+    }, 500);
   }
 }

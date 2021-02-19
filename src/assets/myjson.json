@@ -392,9 +392,9 @@
     {
       "id": "151",
       "key": "0015",
-      "category": "dlectron",
-      "img": "./assets/img/product13.jpg",
-      "title": "sss",
+      "category": "electron",
+      "img": "./assets/img/product16.jpg",
+      "title": "glo Hyper",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum!",
       "value": 1,
       "price": "1.3"

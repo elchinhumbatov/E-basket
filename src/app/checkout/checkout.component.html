@@ -2,7 +2,7 @@
   <div class="container">
     <div class="miniTitle">
       <h2>Səbətiniz</h2>
-      <img src="./assets/img/uzor.png" alt="" />
+      <img src="assets/img/uzor.png" alt="" />
     </div>
     <ng-template #empty>
       <div id="emp-basket">
@@ -16,9 +16,9 @@
         <div> <p>Qiymət</p> </div>
         <div> <p>Ədəd</p> </div>
       </div>
-      <div *ngFor="let elem of productsInCart; let i=index">
+      <div *ngFor="let elem of productsInCart; let i=index" class="hidden e{{i}}">
         <div class="flex_div">
-          <div title="Səbətdən sil" id="x-btn" (click)="deleteProduct(elem)"> &#10060; </div>
+          <div title="Səbətdən sil" id="x-btn" (click)="deleteProduct(elem, i)"> &#10060; </div>
           <div>
             <img [src]="elem.img" alt="">
             <p>{{elem.title}}</p>

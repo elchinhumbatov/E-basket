@@ -11,7 +11,11 @@
         </a>
       </div>
       <div class="user">
-        <div class="user_item">
+        <div 
+          (click)="setTitle('Axtariş')"
+          routerLinkActive="active" 
+          [routerLink] = "['/search']" 
+          class="user_item">
           <fa-icon [icon]="faSearch"></fa-icon>
         </div>
         <div class="user_item">

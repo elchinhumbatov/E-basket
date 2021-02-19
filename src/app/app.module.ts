@@ -28,6 +28,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { ForgetComponent } from './login/forget/forget.component';
 import { RegFormComponent } from './login/reg-form/reg-form.component';
 import { FormComponent } from './login/form/form.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { FormComponent } from './login/form/form.component';
     ErrorPageComponent,
     ForgetComponent,
     RegFormComponent,
-    FormComponent
+    FormComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
